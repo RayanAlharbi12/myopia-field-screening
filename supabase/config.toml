@@ -1,0 +1,17 @@
+# Supabase CLI project configuration — only the Edge Function settings are used
+# by this project. The platform checks the caller's sign-in token before each
+# function runs (verify_jwt = true); every function verifies the token again in
+# its own code and checks the caller's profile and role in the database.
+project_id = "myopia-field-screening"
+
+[functions.admin-create-user]
+verify_jwt = true
+
+[functions.admin-reset-user-password]
+verify_jwt = true
+
+[functions.admin-user-status]
+verify_jwt = true
+
+[functions.change-password]
+verify_jwt = true

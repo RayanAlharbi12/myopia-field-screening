@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="iris" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2BB3A8"/>
+      <stop offset="1" stop-color="#0B6E7A"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0B3D5C"/>
+      <stop offset="1" stop-color="#0B3D5C"/>
+    </linearGradient>
+  </defs>
+  <!-- Eye outline -->
+  <path d="M 70 512 Q 512 170 954 512 Q 512 854 70 512 Z" fill="#FFFFFF" stroke="url(#rim)" stroke-width="34" stroke-linejoin="round"/>
+  <!-- Iris -->
+  <circle cx="512" cy="512" r="236" fill="url(#iris)"/>
+  <!-- Snellen E optotype (vision chart letter) in the iris -->
+  <g fill="#FFFFFF">
+    <rect x="397" y="372" width="46" height="280"/>
+    <rect x="397" y="372" width="230" height="44"/>
+    <rect x="397" y="484" width="200" height="44"/>
+    <rect x="397" y="608" width="230" height="44"/>
+  </g>
+  <!-- School accent: yellow book-style underline -->
+  <path d="M 262 800 Q 512 760 762 800" fill="none" stroke="#FFBA49" stroke-width="34" stroke-linecap="round"/>
+</svg>

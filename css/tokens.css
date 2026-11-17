@@ -1,0 +1,148 @@
+/* =====================================================================
+   Design tokens — calm clinical identity.
+   Light: cool linen ground, ink text, deep pine-slate accent, muted amber
+   for referral (never emergency red). Dark: low-glare graphite, not an inversion.
+   ===================================================================== */
+:root {
+  color-scheme: light;
+
+  --bg: #EFF2EF;
+  --bg-deep: #E6EBE7;
+  --surface: #FFFFFF;
+  --surface-2: #F7F9F7;
+  --sunken: #EDF1EE;
+  --ink: #1A211F;
+  --ink-2: #47524D;
+  --ink-3: #6E7974;
+  --ink-4: #98A29D;
+  --line: #DCE2DD;
+  --line-2: #C6CEC8;
+
+  --accent: #1E5B57;
+  --accent-press: #164744;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #E0ECE9;
+  --accent-line: #9EC2BC;
+  --accent-text: #1B5450;
+
+  --gold: #B7862A;          /* echoes the logo's arc, used sparingly */
+  --gold-soft: #F4EAD2;
+
+  --warn-bg: #F7F0DF;
+  --warn-line: #E3D1A2;
+  --warn-ink: #6E4B0E;
+  --warn-mark: #B07A1E;
+
+  --ok: #2C6A4C;
+  --ok-soft: #E1EEE6;
+  --danger: #9E3A2D;
+  --danger-soft: #F6E3DF;
+  --danger-line: #E2B7AE;
+
+  --focus: #2E7A72;
+  --scrim: rgba(17, 26, 23, 0.42);
+  --shadow-1: 0 1px 2px rgba(22, 33, 29, 0.05), 0 1px 1px rgba(22, 33, 29, 0.03);
+  --shadow-2: 0 2px 8px rgba(22, 33, 29, 0.07);
+  --shadow-pop: 0 18px 44px rgba(16, 26, 22, 0.20), 0 3px 10px rgba(16, 26, 22, 0.08);
+
+  --ring-check: #FFFFFF;
+  --logo-tile: transparent;
+
+  --r-xs: 6px;
+  --r-s: 9px;
+  --r-m: 12px;
+  --r-l: 16px;
+
+  --font: -apple-system, BlinkMacSystemFont, "SF Arabic", "Segoe UI", "Noto Sans Arabic", "Noto Naskh Arabic", Tahoma, "Geeza Pro", system-ui, sans-serif;
+  --font-num: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --t-xs: 12.5px;
+  --t-s: 14px;
+  --t-m: 16px;
+  --t-l: 18px;
+  --t-xl: 22px;
+  --t-xxl: 27px;
+
+  --tap: 44px;
+  --gutter: 16px;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0F1412;
+    --bg-deep: #0B0F0E;
+    --surface: #161C1A;
+    --surface-2: #1A2120;
+    --sunken: #121816;
+    --ink: #E2E8E5;
+    --ink-2: #AEB9B4;
+    --ink-3: #85918B;
+    --ink-4: #5F6A65;
+    --line: #26302D;
+    --line-2: #34403C;
+    --accent: #77B5AB;
+    --accent-press: #8CC3BA;
+    --accent-ink: #0B1513;
+    --accent-soft: #1A2D2A;
+    --accent-line: #355C56;
+    --accent-text: #8FC6BD;
+    --gold: #CDA65A;
+    --gold-soft: #2B2516;
+    --warn-bg: #252016;
+    --warn-line: #4A3E22;
+    --warn-ink: #DDBE7C;
+    --warn-mark: #C99E4B;
+    --ok: #82C09F;
+    --ok-soft: #18271F;
+    --danger: #E3907F;
+    --danger-soft: #2C1A16;
+    --danger-line: #5A3029;
+    --focus: #86C2B8;
+    --scrim: rgba(0, 0, 0, 0.58);
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.35);
+    --shadow-2: 0 2px 10px rgba(0, 0, 0, 0.35);
+    --shadow-pop: 0 18px 50px rgba(0, 0, 0, 0.55), 0 3px 10px rgba(0, 0, 0, 0.4);
+    --ring-check: #0B1513;
+    --logo-tile: #EEF2EF;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0F1412;
+  --bg-deep: #0B0F0E;
+  --surface: #161C1A;
+  --surface-2: #1A2120;
+  --sunken: #121816;
+  --ink: #E2E8E5;
+  --ink-2: #AEB9B4;
+  --ink-3: #85918B;
+  --ink-4: #5F6A65;
+  --line: #26302D;
+  --line-2: #34403C;
+  --accent: #77B5AB;
+  --accent-press: #8CC3BA;
+  --accent-ink: #0B1513;
+  --accent-soft: #1A2D2A;
+  --accent-line: #355C56;
+  --accent-text: #8FC6BD;
+  --gold: #CDA65A;
+  --gold-soft: #2B2516;
+  --warn-bg: #252016;
+  --warn-line: #4A3E22;
+  --warn-ink: #DDBE7C;
+  --warn-mark: #C99E4B;
+  --ok: #82C09F;
+  --ok-soft: #18271F;
+  --danger: #E3907F;
+  --danger-soft: #2C1A16;
+  --danger-line: #5A3029;
+  --focus: #86C2B8;
+  --scrim: rgba(0, 0, 0, 0.58);
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-2: 0 2px 10px rgba(0, 0, 0, 0.35);
+  --shadow-pop: 0 18px 50px rgba(0, 0, 0, 0.55), 0 3px 10px rgba(0, 0, 0, 0.4);
+  --ring-check: #0B1513;
+  --logo-tile: #EEF2EF;
+}

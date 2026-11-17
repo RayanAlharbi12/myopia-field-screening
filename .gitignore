@@ -1,0 +1,6 @@
+node_modules/
+dist/
+tests/.dist-test/
+tests/.dist-x/
+tests/e2e/.server.log
+.DS_Store

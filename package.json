@@ -1,0 +1,19 @@
+{
+  "name": "myopia-field-screening",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Myopia Field Screening Research System — Phase 2 (online, multi-device, Supabase)",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "node build/dev-server.mjs",
+    "build": "node build/build.mjs",
+    "setup-sql": "node build/make-setup.mjs",
+    "test:db": "bash tests/db/run_db_tests.sh"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.109.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
